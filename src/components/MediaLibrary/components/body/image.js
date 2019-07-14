@@ -13,21 +13,14 @@ function MyImage(props) {
     showLowResImagesHandler(false)
   }
 
-  useEffect(()=>{
-    console.log(window.innerWidth);
-    if(window.innerWidth > 808){
-      heighHandler(300);
-      widthHandler(200)
-    }
-  })
+ 
 
-  useLayoutEffect(()=>{
-    console.log(window.innerWidth);
-    if(window.innerWidth > 808){
+  useEffect(()=>{
+    if(window.innerWidth > 825){
       heighHandler(300);
       widthHandler(200)
     }
-    else if( 820 >  window.innerWidth < 500){
+    else if( 824 >  window.innerWidth > 500){
       heighHandler(280);
       widthHandler(190)
     }
@@ -36,6 +29,44 @@ function MyImage(props) {
       widthHandler(120)
     }
   })
+
+  
+  // useLayoutEffect(()=>{
+  //   console.log(window.innerWidth);
+  //   if(window.innerWidth > 808){
+  //     heighHandler(300);
+  //     widthHandler(200)
+  //   }
+  //   else if( 820 >  window.innerWidth < 500){
+  //     heighHandler(280);
+  //     widthHandler(190)
+  //   }
+  //   else{
+  //     heighHandler(180);
+  //     widthHandler(120)
+  //   }
+  // })
+
+  const updateDimensions =()=>{
+
+  console.log(window.innerWidth);
+
+    if(window.innerWidth > 825){
+      heighHandler(300);
+      widthHandler(200)
+    }
+    else if( window.innerWidth < 824  &&  window.innerWidth > 600){
+      heighHandler(280);
+      widthHandler(190)
+    }
+ 
+    else{
+      heighHandler(180);
+      widthHandler(120)
+    }
+  }
+
+  // window.addEventListener("resize", updateDimensions);
 
 
   return (
