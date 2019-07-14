@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Head from './components/head'
 import Body from './components/body'
-
-import axios from 'axios'
 import InfiniteScroll from 'react-infinite-scroller';
 import * as actionCreator from '../../store/actions/index'
 import { connect } from 'react-redux'
@@ -10,19 +8,10 @@ import { connect } from 'react-redux'
 
 class MediaLibrary extends Component {
 
-
-    state = {
-        movies: [],
-        page: 1,
-        hasMoreItems: true
-    }
-
     componentDidMount=()=>{
         this.props.getMovieLibraryStart();
-
     }
 
-   
     loadFunc = (page) => {
         this.props.getMovieLibrary(page);
     }
