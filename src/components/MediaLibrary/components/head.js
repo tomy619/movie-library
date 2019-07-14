@@ -20,8 +20,8 @@ function App(props) {
 
     return (
         <div className="fixed  top-0 bg-transparent" >
-            <img className="m-0 w-screen" style={{ height: 60 }} src={Header} />
-            <div className=" absolute top-0 p-1 text-gray-500 text-centre">
+            <img className="m-0 w-screen" style={{ height: 70 }} src={Header} />
+            <div className=" absolute top-0 p-1 pt-2 text-gray-500 text-centre">
 
                 <div className="flex flex-initial justify-center  items-center bg-transparent pr-4">
                     <div className="flex-initial pr-4">

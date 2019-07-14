@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Image from './image'
+// import Image from './image'
+import Image from './imageCorrected'
 
 import placeholder from '../../../../assets/img/placeholder_for_missing_posters.png'
 import LazyLoad from 'react-lazy-load';

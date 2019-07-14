@@ -19,6 +19,7 @@ class MediaLibrary extends Component {
     search=(event)=>{
         this.props.searchMovie(event.target.value);
     }
+
     searchClear=(event)=>{
         this.props.searchMovie('');
     }
@@ -43,11 +44,6 @@ class MediaLibrary extends Component {
                         ></Body>
                     </InfiniteScroll>
                 </div>
-
-
-
-
-
             </div>
         );
     }
