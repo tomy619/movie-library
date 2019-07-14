@@ -11,9 +11,6 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-
-  overflow: scroll;
-  overflow-x: hidden;
 }
 
 /* Sections
@@ -25,15 +22,7 @@ html {
 
 body {
   margin: 0;
-}
-
-::-webkit-scrollbar {
-  width: 0px;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
-}
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-  background: #FF0000;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 /**
@@ -5225,11 +5214,6 @@ video {
 .py-0 {
   padding-top: 0;
   padding-bottom: 0;
-}
-
-.px-tom {
-  padding-left: 7px;
-  padding-right: 7px;
 }
 
 .px-0 {
