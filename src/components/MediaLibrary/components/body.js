@@ -14,7 +14,7 @@ class MediaLibrary extends Component {
                         {this.props.movies.map((movie, index) => {
                             return (
                                 <div key={index} className="w-1/3 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 mb-4  ">
-                                    <Poster name={movie.name} posterImage={movie.poster_image}></Poster>
+                                    <Poster name={movie.name} posterImage={movie.poster_Image}></Poster>
                                 </div>
                             )
                         })}

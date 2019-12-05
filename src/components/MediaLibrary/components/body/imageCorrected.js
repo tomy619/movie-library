@@ -23,7 +23,7 @@ class MyImage extends Component {
     }
 
     updateDimensions = () => {
-        console.log(window.innerWidth);
+        // console.log(window.innerWidth);
         if (window.innerWidth > 825) {
             this.setState({ height: 300, width: 200 })
         }
